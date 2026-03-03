@@ -4,7 +4,7 @@ http://127.0.0.1:5000
 
 # THEORY:-
 
-# KEYWORD EXTRACTION:
+KEYWORD EXTRACTION:
 
 Keyword Extraction is a Natural Language Processing (NLP) technique used to automatically identify the most important words or phrases in a document. These keywords summarize the core content and help in information retrieval, document indexing, topic identification, and search optimization.
 Unlike text classification, keyword extraction does not assign a category label. Instead, it identifies significant terms based on statistical importance within the document.
@@ -46,42 +46,41 @@ The main objectives of this project are:
 
 1. Text Preprocessing
 
-Clean raw textual data
+a) Clean raw textual data
 
-Remove noise (HTML tags, punctuation, special characters)
+b) Remove noise (HTML tags, punctuation, special characters)
 
-Remove stopwords
+c) Remove stopwords
 
-Perform tokenization
+d) Perform tokenization
 
-Apply lemmatization
+e) Apply lemmatization
 
 2. Feature Engineering
 
-Convert text into numerical format using CountVectorizer
+a) Convert text into numerical format using CountVectorizer
 
-Apply TF-IDF transformation for weighting terms
+b) Apply TF-IDF transformation for weighting terms
 
 3. Keyword Extraction
 
-Rank terms based on TF-IDF scores
+a) Rank terms based on TF-IDF scores
 
-Extract top-N keywords from a document
+b) Extract top-N keywords from a document
 
 4. Deployment
 
-Build a Flask-based web interface
+a) Build a Flask-based web interface
 
-Allow users to upload text documents
+b) Allow users to upload text documents
 
-Display extracted keywords dynamically
+c) Display extracted keywords dynamically
 
-DATASET AND FEATURES
-DATASET
+# DATASET AND FEATURES:-
 
-This project does not rely on a fixed public dataset during runtime. Instead, it uses:
+DATASET:
 
-A training corpus used to build:
+This project does not rely on a fixed public dataset during runtime. Instead, it uses a training corpus used to build:-
 
 count_vectorizer.pkl
 
@@ -95,23 +94,26 @@ These serialized files are generated from a pre-trained corpus and loaded during
 
 The preprocessing pipeline includes:
 
-Lowercasing text
+1. Lowercasing text
 
-Removing HTML tags
+2. Removing HTML tags
 
-Removing digits and special characters
+3. Removing digits and special characters
 
-Tokenization using NLTK
+4. Tokenization using NLTK
 
-Stop-word removal
+5. Stop-word removal
 
-Removing words with less than 3 characters
+6. Removing words with less than 3 characters
 
-Lemmatization using WordNetLemmatizer
+7. Lemmatization using WordNetLemmatizer
 
 # FEATURE REPRESENTATION:-
 
 FEATURE TYPE                     DESCRIPTION                             	   TOOL USED
+
 Token Frequency	    Basic Bag-of-Words word count representation	         CountVectorizer
+
 TF-IDF Weighting	  Weighted importance of words within corpus	           TfidfTransformer
+
 Ranked Keywords	    Top N highest scoring terms extracted per document	   Custom Ranking Logic
