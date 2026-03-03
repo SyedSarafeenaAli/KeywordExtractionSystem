@@ -2,9 +2,9 @@
 
 http://127.0.0.1:5000
 
-# THEORY
+# THEORY:-
 
-KEYWORD EXTRACTION:
+# KEYWORD EXTRACTION:
 
 Keyword Extraction is a Natural Language Processing (NLP) technique used to automatically identify the most important words or phrases in a document. These keywords summarize the core content and help in information retrieval, document indexing, topic identification, and search optimization.
 Unlike text classification, keyword extraction does not assign a category label. Instead, it identifies significant terms based on statistical importance within the document.
