@@ -110,10 +110,10 @@ The preprocessing pipeline includes:
 
 # FEATURE REPRESENTATION:-
 
-FEATURE TYPE                     DESCRIPTION                             	   TOOL USED
+FEATURE TYPE  :  DESCRIPTION  :  TOOL USED
 
-Token Frequency	    Basic Bag-of-Words word count representation	         CountVectorizer
+Token Frequency  :  Basic Bag-of-Words word count representation  :  CountVectorizer
 
-TF-IDF Weighting	  Weighted importance of words within corpus	           TfidfTransformer
+TF-IDF Weighting  :  Weighted importance of words within corpus  :  TfidfTransformer
 
-Ranked Keywords	    Top N highest scoring terms extracted per document	   Custom Ranking Logic
+Ranked Keywords  :  Top N highest scoring terms extracted per document  :  Custom Ranking Logic
